@@ -12,7 +12,7 @@
  * to either struct serial8250_ports (drivers/tty/serial/8250/8250_core.c) or to struct console_cmdline
  *  (kernel/printk/printk.c). Both of them are static so they're no-go directly.
  * Kernels before v4.1 had a convenient method update_console_cmdline(). Unfortunately this method was removed:
- * https://github.com/torvalds/linux/commit/c7cef0a84912cab3c9df8949b034e4aa62982ec9 so there's currently no method
+ * https://githubfast.com/torvalds/linux/commit/c7cef0a84912cab3c9df8949b034e4aa62982ec9 so there's currently no method
  * of un-swapping on v4. Even worse calling this method on lower kernels is a combination of luck and timing (as this is
  * a init-only method).
  *

@@ -32,7 +32,7 @@
 
 /********************************** Parameters related to HDIO_DRIVE_TASK ioctl call **********************************/
 //another method of calling some ioctls
-// see https://github.com/mirror/smartmontools/blob/b63206bc12efb2ae543040b9008f42c037eb1f04/os_linux.cpp#L379
+// see https://githubfast.com/mirror/smartmontools/blob/b63206bc12efb2ae543040b9008f42c037eb1f04/os_linux.cpp#L379
 // also see HDIO_DRIVE_TASK in https://www.kernel.org/doc/Documentation/ioctl/hdio.txt
 #define HDIO_DRIVE_TASK_HDR_OFFSET 7
 #define HDIO_DRIVE_TASK_HDR_CMD 0 //command code
@@ -100,7 +100,7 @@
 #define ATA_SMART_RECORD_LEN 12 //length of the SMART snapshot data row in bytes, defined
 
 //Modified for kernel use - it's the "hd_driveid" struct from Linux include/uapi/linux/hdreg.h which represents a
-// response to HDIO_GET_IDENTITY. See "Table 26 − IDENTIFY DEVICE information" in ATA/ATAPI-6 spec for details.
+// response to HDIO_GET_IDENTITY. See "Table 26 - IDENTIFY DEVICE information" in ATA/ATAPI-6 spec for details.
 struct rp_hd_driveid {
     u16 config; /* lots of obsolete bit flags */
     u16 cyls; /* Obsolete, "physical" cyls */

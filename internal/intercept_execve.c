@@ -14,7 +14,7 @@
  * Because of that this trick is only utilized on Linux >v3.18 and older ones call the stub as normal.
  *
  * References:
- *  - https://github.com/torvalds/linux/commit/b645af2d5905c4e32399005b867987919cbfc3ae
+ *  - https://githubfast.com/torvalds/linux/commit/b645af2d5905c4e32399005b867987919cbfc3ae
  *  - https://my.oschina.net/macwe/blog/603583
  *  - https://stackoverflow.com/questions/8372912/hooking-sys-execve-on-linux-3-x
  */
@@ -87,7 +87,7 @@ SYSCALL_SHIM_DEFINE3(execve,
 
 //Depending on the version of the kernel do_execve() accepts bare filename (old) or the full struct filename (newer)
 //Additionally in older kernels we need to take care of the path lifetime and put it back (it's automatic in newer)
-//See: https://github.com/torvalds/linux/commit/c4ad8f98bef77c7356aa6a9ad9188a6acc6b849d
+//See: https://githubfast.com/torvalds/linux/commit/c4ad8f98bef77c7356aa6a9ad9188a6acc6b849d
 #if LINUX_VERSION_CODE < KERNEL_VERSION(3,14,0)
     int out = _do_execve(pathname, argv, envp);
     _putname(path);

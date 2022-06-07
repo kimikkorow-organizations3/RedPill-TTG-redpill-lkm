@@ -20,7 +20,7 @@
 #define STD_COM4_IOBASE 0x2e8
 #define STD_COM4_IRQ 3
 
-//They changed name of flags const: https://github.com/torvalds/linux/commit/196cf358422517b3ff3779c46a1f3e26fb084172
+//They changed name of flags const: https://githubfast.com/torvalds/linux/commit/196cf358422517b3ff3779c46a1f3e26fb084172
 #if LINUX_VERSION_CODE < KERNEL_VERSION(3,18,0)
 #define STD_COMX_FLAGS STD_COM_FLAGS
 #endif

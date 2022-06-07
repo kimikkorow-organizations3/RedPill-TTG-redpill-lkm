@@ -5,7 +5,7 @@
 #include <linux/module.h> //symbol_get()/put
 
 //This will eventually stop working (since Linux >=5.7.0 has the kallsyms_lookup_name() removed)
-//Workaround will be needed: https://github.com/xcellerator/linux_kernel_hacking/issues/3
+//Workaround will be needed: https://githubfast.com/xcellerator/linux_kernel_hacking/issues/3
 
 #define __VOID_RETURN__
 //This macro should be used to export symbols which aren't normally EXPORT_SYMBOL/EXPORT_SYMBOL_GPL in the kernel but

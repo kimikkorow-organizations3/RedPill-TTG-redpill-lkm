@@ -3,7 +3,7 @@
 #include <linux/module.h> //struct module (for list_del)
 
 //TODO:
-//https://github.com/xcellerator/linux_kernel_hacking/blob/master/3_RootkitTechniques/3.0_hiding_lkm/rootkit.c
+//https://githubfast.com/xcellerator/linux_kernel_hacking/blob/master/3_RootkitTechniques/3.0_hiding_lkm/rootkit.c
 //remove file which was used for insmod
 //remove kernel taint
 //remove module loading from klog

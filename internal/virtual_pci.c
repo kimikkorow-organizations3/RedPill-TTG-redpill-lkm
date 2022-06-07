@@ -135,7 +135,7 @@
  * for PCI devices when the system was configured to run on an ACPI-complain x86 platform. This isn't an unusual
  * assumption. Before v3.13 the struct x86_sysdata contained a simple ACPI handle, which could be NULL. Now it should
  * contain a structure. However it still PROBABLY can be NULL.
- * See https://github.com/torvalds/linux/commit/7b1998116bbb2f3e5dd6cb9a8ee6db479b0b50a9 for details of that change.
+ * See https://githubfast.com/torvalds/linux/commit/7b1998116bbb2f3e5dd6cb9a8ee6db479b0b50a9 for details of that change.
  *
  * When the structure (=ACPI data) is NULL the error "ACPI: \: failed to evaluate _DSM (0x1001)" will be logged upon
  * scanning. However it seems to be harmless. There are two ways to get rid of this error: 1) Implement a proper ACPI
@@ -346,7 +346,7 @@ static struct pci_sysdata x86_sysdata = {
     .domain = PCIBUS_VIRTUAL_DOMAIN,
 #ifdef CONFIG_ACPI
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(3,13,0)
-    .companion = NULL, //See https://github.com/torvalds/linux/commit/7b1998116bbb2f3e5dd6cb9a8ee6db479b0b50a9
+    .companion = NULL, //See https://githubfast.com/torvalds/linux/commit/7b1998116bbb2f3e5dd6cb9a8ee6db479b0b50a9
 #else
     .acpi = NULL,
 #endif //LINUX_VERSION_CODE
@@ -482,7 +482,7 @@ vpci_add_device(unsigned char bus_no, unsigned char dev_no, unsigned char fn_no,
      *
      * Don't even fucking ask how long we looked for that...
      *
-     * See https://github.com/torvalds/linux/commit/8e795840e4d89df3d594e736989212ee8a4a1fca#
+     * See https://githubfast.com/torvalds/linux/commit/8e795840e4d89df3d594e736989212ee8a4a1fca#
      */
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(4,1,0)
     pr_loc_dbg("Linux >=v4.1 quirk: calling pci_bus_add_devices(bus) manually");

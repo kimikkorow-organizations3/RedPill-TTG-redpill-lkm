@@ -13,7 +13,7 @@
 #define SCSI_CAP_MAX_RETRIES 3
 #define SCSI_BUF_SIZE 512 //originally defined in drivers/scsi/sd.h as SD_BUF_SIZE
 
-//Old kernels used ambiguous constant: https://github.com/torvalds/linux/commit/eb846d9f147455e4e5e1863bfb5e31974bb69b7c
+//Old kernels used ambiguous constant: https://githubfast.com/torvalds/linux/commit/eb846d9f147455e4e5e1863bfb5e31974bb69b7c
 #if LINUX_VERSION_CODE < KERNEL_VERSION(3,19,0)
 #define SCSI_SERVICE_ACTION_IN_16 SERVICE_ACTION_IN
 #else

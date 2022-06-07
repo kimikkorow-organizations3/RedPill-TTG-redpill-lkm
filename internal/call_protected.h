@@ -22,10 +22,10 @@ CP_DECLARE_SHIM(void, flush_tlb_all, CP_LIST(void)); //used to flush caches in m
 /* Thanks Jeff... https://groups.google.com/g/kernel-meetup-bangalore/c/rvQccTl_3kc/m/BJCnnXGCAgAJ
  * In case the link disappears: Jeff Layton from RedHat decided to just nuke the getname() API after 7 years of it being
  *  exposed in the kernel. So in practice we need to use kallsyms to get it on kernels >=3.14 (up to current 5.14)
- * See https://github.com/torvalds/linux/commit/9115eac2c788c17b57c9256cb322fa7371972ddf
+ * See https://githubfast.com/torvalds/linux/commit/9115eac2c788c17b57c9256cb322fa7371972ddf
  * Another unrelated change which happened in v3.14 was that when "struct filename*" is passed the callee is responsible
  *  for freeing it (using putname()). However, in older versions we (the caller) needs to free it
- * See https://github.com/torvalds/linux/commit/c4ad8f98bef77c7356aa6a9ad9188a6acc6b849d
+ * See https://githubfast.com/torvalds/linux/commit/c4ad8f98bef77c7356aa6a9ad9188a6acc6b849d
  *
  * This whole block deals with functions needed for execve() shimming
  */

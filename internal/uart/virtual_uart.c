@@ -51,7 +51,7 @@
  *    ttyS* values and not swapped bs (as 8250 matches ports by iobase and not line#)
  *
  * References:
- *  - https://github.com/clearlinux/kvmtool/blob/b5891a4337eb6744c8ac22cc02df3257961ae23e/hw/serial.c (inspiration)
+ *  - https://githubfast.com/clearlinux/kvmtool/blob/b5891a4337eb6744c8ac22cc02df3257961ae23e/hw/serial.c (inspiration)
  *  - https://www.ti.com/lit/ug/sprugp1/sprugp1.pdf (everything you need to know abt UART, referred in code as "Ti doc")
  *  - http://caro.su/msx/ocm_de1/16550.pdf (useful and short UART know-how with a good registry table in Table 2, p. 9)
  *  - https://www.linuxjournal.com/article/8144 (handling threading in kernel)
@@ -145,7 +145,7 @@ static volatile bool kernel_driver_ready = false; //Whether the 8250 UART driver
 #define for_each_vdev() for (int line=0; line < ARRAY_SIZE(ttySs); ++line)
 
 //Before v3.13 the kfifo_put() accepted a pointer, since then it accepts a value
-//ffs... https://github.com/torvalds/linux/commit/498d319bb512992ef0784c278fa03679f2f5649d
+//ffs... https://githubfast.com/torvalds/linux/commit/498d319bb512992ef0784c278fa03679f2f5649d
 #if LINUX_VERSION_CODE < KERNEL_VERSION(3,13,0)
 #define kfifo_put_val(fifo, val) kfifo_put(fifo, &val)
 #else

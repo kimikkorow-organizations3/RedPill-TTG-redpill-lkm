@@ -58,7 +58,7 @@ struct proc_inode {
 	struct inode vfs_inode;
 };
 
-//See https://github.com/torvalds/linux/commit/771187d61bb3cbaf62c492ec3b8b789933f7691e
+//See https://githubfast.com/torvalds/linux/commit/771187d61bb3cbaf62c492ec3b8b789933f7691e
 //v3.19 - <v4.9 (they changed it a bit starting with v4.9)
 #elif LINUX_VERSION_CODE < KERNEL_VERSION(4,9,0)
 struct proc_dir_entry {
